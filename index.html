@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Content Systems | Grow Your Traffic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            900: '#1e3a8a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body { 
+            background-color: #f8fafc; 
+            color: #0f172a; 
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .soft-shadow {
+            box-shadow: 0 10px 40px -10px rgba(0,0,0,0.08);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-lg border-b border-slate-200 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="bg-brand-600 p-2 rounded-lg text-white">
+                    <i data-lucide="sparkles" class="w-6 h-6"></i>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-slate-900">Content<span class="text-brand-600">Engine</span></span>
+            </div>
+            <a href="#contact" class="hidden md:inline-flex px-6 py-2.5 rounded-full bg-slate-900 text-white hover:bg-slate-800 transition-all font-medium text-sm">
+                Get Your Free Trial
+            </a>
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden p-2 text-slate-600">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 md:pt-48 md:pb-32 px-4 sm:px-6 relative overflow-hidden">
+        <!-- Background Decoration -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-[500px] h-[500px] bg-blue-100 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-[400px] h-[400px] bg-purple-100 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+        
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 border border-brand-100 text-brand-600 text-sm font-medium mb-8">
+                <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+                Now accepting 5 new clients this month
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 tracking-tight leading-[1.1]">
+                Stop Paying Writers. <br class="hidden md:block">
+                <span class="gradient-text">Start Growing Your Traffic.</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl mx-auto font-light">
+                To rank on Google, you need to prove you are an expert. We build smart, automated systems that research your industry daily and write highly-targeted articles for your website—while you sleep.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#how-it-works" class="w-full sm:w-auto px-8 py-4 rounded-full bg-brand-600 text-white font-semibold hover:bg-brand-700 transition-colors shadow-lg shadow-brand-500/30 flex items-center justify-center gap-2 text-lg">
+                    See How It Works
+                </a>
+                <p class="text-sm text-slate-500 sm:hidden mt-2">No credit card required.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Problem Section -->
+    <section class="py-16 md:py-24 bg-white border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
+                
+                <!-- Image/Visual Side -->
+                <div class="order-2 md:order-1 relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-brand-100 to-purple-50 rounded-3xl transform -rotate-3 scale-105"></div>
+                    <div class="relative bg-white p-6 md:p-8 rounded-3xl border border-slate-100 soft-shadow">
+                        <h4 class="font-bold text-slate-900 mb-4 flex items-center gap-2">
+                            <i data-lucide="x-circle" class="text-red-500 w-5 h-5"></i> The "Cheap Writer" Problem
+                        </h4>
+                        <div class="space-y-4">
+                            <div class="p-4 bg-slate-50 rounded-xl border border-slate-100">
+                                <p class="text-sm text-slate-600 italic">"Solar energy is very good. It comes from the sun and saves you money. You should buy solar panels today."</p>
+                                <div class="mt-3 text-xs font-bold text-red-500 uppercase tracking-wide">Google Ranking: Page 10 (Invisible)</div>
+                            </div>
+                            <p class="text-slate-600 text-sm">
+                                General writers don't know your business. They Google basic facts and rewrite them. Your customers get bored, and Google ignores the article because it offers zero new value.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Side -->
+                <div class="order-1 md:order-2">
+                    <h2 class="text-sm font-bold text-brand-600 mb-3 uppercase tracking-wider">The Content Trap</h2>
+                    <h3 class="text-3xl md:text-4xl font-extrabold mb-6 text-slate-900">Good content requires deep research. Who has the time?</h3>
+                    <div class="space-y-6 text-slate-600 text-lg font-light leading-relaxed">
+                        <p>
+                            Business owners know their industry inside and out, but they are too busy running the company to sit down and write blogs for three hours a day.
+                        </p>
+                        <p>
+                            If you hire an expert to write for you, it costs $300 to $500 per article. That drains your marketing budget instantly.
+                        </p>
+                        <p class="font-medium text-slate-900">
+                            The secret to ranking on Google isn't writing *more* words. It's researching trending topics and sharing a unique expert opinion.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- The Secret Weapon: Multiple Angles (Crucial Section) -->
+    <section id="how-it-works" class="py-16 md:py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-sm font-bold text-brand-600 mb-3 uppercase tracking-wider">Our Secret Weapon</h2>
+                <h3 class="text-3xl md:text-4xl font-extrabold mb-6 text-slate-900">We don't just write. We find the "Angles."</h3>
+                <p class="text-slate-600 text-lg md:text-xl font-light">
+                    Basic AI just summarizes the news. Our system reads the news and asks, <strong>"Who cares about this, and why?"</strong> We take one trending topic and write completely different articles for different readers.
+                </p>
+            </div>
+
+            <!-- Example Visualization -->
+            <div class="bg-white p-6 md:p-10 rounded-3xl soft-shadow border border-slate-200">
+                <div class="flex flex-col items-center mb-10 text-center">
+                    <div class="bg-brand-100 text-brand-700 p-3 rounded-2xl mb-4">
+                        <i data-lucide="newspaper" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900">Today's Trending News Story:</h4>
+                    <p class="text-slate-600 font-medium bg-slate-100 px-4 py-2 rounded-full mt-2 inline-block">"Government announces new 30% Solar Tax Credit for 2026"</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6 relative">
+                    <!-- Connecting lines for desktop -->
+                    <div class="hidden md:block absolute top-0 left-1/6 right-1/6 h-px bg-slate-200 -mt-4"></div>
+
+                    <!-- Angle 1 -->
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 relative">
+                        <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-white px-3 text-xs font-bold text-brand-600 border border-slate-200 rounded-full">Angle 1: For Homeowners</div>
+                        <h5 class="font-bold text-slate-900 mb-2 mt-4">"How the 2026 Tax Credit Lowers Your Home Power Bill"</h5>
+                        <p class="text-sm text-slate-600">The system writes a friendly, easy-to-read guide explaining how a family can save money on their roof installation this summer.</p>
+                    </div>
+
+                    <!-- Angle 2 -->
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 relative">
+                        <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-white px-3 text-xs font-bold text-brand-600 border border-slate-200 rounded-full">Angle 2: For Real Estate</div>
+                        <h5 class="font-bold text-slate-900 mb-2 mt-4">"Will the 2026 Solar Credit Increase Property Values?"</h5>
+                        <p class="text-sm text-slate-600">The system writes a professional guide for real estate agents detailing how solar panels affect a home's resale value.</p>
+                    </div>
+
+                    <!-- Angle 3 -->
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 relative">
+                        <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-white px-3 text-xs font-bold text-brand-600 border border-slate-200 rounded-full">Angle 3: For Installers</div>
+                        <h5 class="font-bold text-slate-900 mb-2 mt-4">"Preparing Your Supply Chain for the 2026 Solar Boom"</h5>
+                        <p class="text-sm text-slate-600">The system writes a highly technical, business-focused article for installation crews on how to manage the upcoming rush of customers.</p>
+                    </div>
+                </div>
+                
+                <div class="mt-10 text-center p-4 bg-brand-50 rounded-xl border border-brand-100">
+                    <p class="text-brand-800 font-medium">Result: <strong class="font-bold">3 completely unique, highly valuable articles</strong> created from a single day's research. This is how you dominate search results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The 3 Step Process -->
+    <section class="py-16 md:py-24 bg-white border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-6 text-slate-900">How your automated system runs.</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto bg-brand-100 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="search" class="text-brand-600 w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-slate-900">1. Daily Research</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Every morning, your custom system reads industry news, watches expert YouTube videos, and finds exactly what people in your niche are searching for today.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto bg-brand-100 rounded-full flex items-center justify-center mb-6 relative">
+                        <i data-lucide="edit-3" class="text-brand-600 w-8 h-8"></i>
+                        <div class="hidden md:block absolute top-1/2 left-full w-full h-0.5 bg-slate-200 -z-10 -translate-y-1/2"></div>
+                        <div class="hidden md:block absolute top-1/2 right-full w-full h-0.5 bg-slate-200 -z-10 -translate-y-1/2"></div>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-slate-900">2. Smart Writing</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        It doesn't just copy. It selects the best "Angle" and writes a helpful, formatted, and valuable article designed specifically to rank on Google.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto bg-brand-100 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="send" class="text-brand-600 w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-slate-900">3. Hands-Free Publishing</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        The article is automatically posted directly to your website's blog. You don't have to log in, you don't have to edit, and you don't have to click "publish."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Test Us Challenge -->
+    <section class="py-16 md:py-24 bg-slate-900 text-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-4">The "Test Us" Challenge</h2>
+                <p class="text-slate-400 text-lg max-w-2xl mx-auto">
+                    Take any article our system writes for you, paste it into ChatGPT, and ask the AI to grade our work based on these 5 simple rules:
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <i data-lucide="target" class="text-brand-400 w-6 h-6 mb-4"></i>
+                    <h5 class="font-bold text-white mb-2">1. Google Ready (SEO)</h5>
+                    <p class="text-sm text-slate-400">Is it formatted correctly with the right keywords to show up on Google searches?</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <i data-lucide="user" class="text-brand-400 w-6 h-6 mb-4"></i>
+                    <h5 class="font-bold text-white mb-2">2. Sounds Human</h5>
+                    <p class="text-sm text-slate-400">Does it sound like a friendly human expert wrote it, or does it sound like a boring robot?</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <i data-lucide="flame" class="text-brand-400 w-6 h-6 mb-4"></i>
+                    <h5 class="font-bold text-white mb-2">3. Fresh & Trending</h5>
+                    <p class="text-sm text-slate-400">Is the information based on today's news, or is it old, outdated facts?</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <i data-lucide="eye" class="text-brand-400 w-6 h-6 mb-4"></i>
+                    <h5 class="font-bold text-white mb-2">4. Easy to Read</h5>
+                    <p class="text-sm text-slate-400">Are there bullet points, short paragraphs, and clear titles so people can skim it?</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 sm:col-span-2 lg:col-span-1">
+                    <i data-lucide="award" class="text-brand-400 w-6 h-6 mb-4"></i>
+                    <h5 class="font-bold text-white mb-2">5. Real Value</h5>
+                    <p class="text-sm text-slate-400">Will your customer actually learn something helpful from reading this?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / CTA -->
+    <section id="contact" class="py-20 md:py-32 bg-white relative overflow-hidden">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-6 text-slate-900 tracking-tight">Ready to fire your writers?</h2>
+            <p class="text-slate-600 mb-10 text-lg md:text-xl font-light">
+                Let's set up a custom research engine for your exact business. You keep 100% of the traffic, and you never have to write a blog post again.
+            </p>
+            <a href="mailto:hello@youragency.com" class="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-10 py-5 rounded-full bg-brand-600 text-white font-bold hover:bg-brand-700 transition-colors shadow-xl shadow-brand-500/20 text-lg">
+                <i data-lucide="calendar" class="w-5 h-5"></i> Book Your Strategy Call
+            </a>
+            <p class="mt-6 text-sm text-slate-500">We handle all the tech setup. You just watch the traffic grow.</p>
+        </div>
+    </section>
+
+    <footer class="py-8 bg-slate-50 border-t border-slate-200 text-center text-sm text-slate-500">
+        <p>&copy; 2026 Content Engine Agency. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
